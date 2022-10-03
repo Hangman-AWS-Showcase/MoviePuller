@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
 	  params: {tconst: movId},
 	  headers: {
 	    'X-RapidAPI-Key': process.env.API_KEY,
-	    'X-RapidAPI-Host': process.env.API_ENDPOINT
+	    'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
 	  }
 	};
 
