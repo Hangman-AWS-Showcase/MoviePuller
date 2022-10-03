@@ -1,6 +1,5 @@
-
-
-// Precompiled to prevent an extra api call each run.
+// Precompiled to save an extra api call each run.
+// Althought this does get the latest popular movies, it'll do for the purpose of the application.
 const precompiled_movies = [
   'tt10731256', 'tt13327038', 'tt10640346',
   'tt10648342', 'tt8093700',  'tt15791034',
