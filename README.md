@@ -5,7 +5,7 @@ This is a microservice in a larger project. This microservice will be pulling mo
 -----
 
 ### Stack
-This microservice is build using Node.js, using the [Rapid API Movie Database Alternative](https://rapidapi.com/rapidapi/api/movie-database-alternative/) to get movie data.
+This microservice is build using Node.js with express, using the [Rapid API Movie Database Alternative](https://rapidapi.com/rapidapi/api/movie-database-alternative/) to get movie data.
 
 
 ### Flow
