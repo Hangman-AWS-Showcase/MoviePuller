@@ -1,12 +1,14 @@
 const { getRandomMovieTtid } = require('./movies');
 
 require('dotenv').config()
-
 const axios = require("axios");
 const express = require('express');
+const cors = require('cors');
 
 const app = express()
-const port = 3000;
+app.use(cors())
+
+const port = 8000;
 
 
 // Handle requests to the api server.
@@ -16,13 +18,13 @@ app.get('/', async (req, res) => {
 	let movId = getRandomMovieTtid();
 
 	// Manage the api request
-  const options = {
+	const options = {
 	  method: 'GET',
 	  url: 'https://online-movie-database.p.rapidapi.com/title/get-details',
 	  params: {tconst: movId},
 	  headers: {
-	    'X-RapidAPI-Key': process.env.API_KEY,
-	    'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
+		'X-RapidAPI-Key': process.env.API_KEY,
+		'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
 	  }
 	};
 
